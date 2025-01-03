@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/svg+xml" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="90">🚀</text></svg>'>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            animation: fadeIn 1.5s ease-in;
+        }
+        h1 {
+            color: #333;
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            background-color: white; /* White background for content */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+            padding: 40px;
+            width: 70%; /* Content width */
+            max-width: 600px; /* Max width for larger screens */
+            opacity: 0;
+            animation: slideIn 1s forwards; /* Slide-in animation */
+        }
+
+        .content p {
+            color: #555; /* Gray color for text */
+            font-size: 1.2em;
+            margin-top: 0;
+        }
+
+        /* Button style with hover effect */
+        button {
+            background-color: #cc00ff; /* Purple background */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+            transition: transform 0.3s ease; /* Smooth scale transition */
+        }
+
+        button:hover {
+            background-color: #9b00cc; /* Darker purple on hover */
+            transform: scale(1.1); /* Scale up button on hover */
+        }
+
+        /* Profile Section */
+        .profile {
+            text-align: center;
+            margin-top: 20px;
+            opacity: 0;
+            animation: fadeInProfile 1s 0.5s forwards; /* Fade-in profile */
+        }
+
+        .profile img {
+            width: 150px; /* Profile image size */
+            height: 150px;
+            border-radius: 50%; /* Circular profile picture */
+            object-fit: cover; /* Ensures the image covers the circle properly */
+            margin-bottom: 15px;
+            transition: transform 0.3s ease-in-out; /* Smooth zoom effect */
+        }
+
+        .profile img:hover {
+            transform: scale(1.1); /* Zoom effect when hovering over image */
+        }
+
+        .profile h2 {
+            font-size: 2em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .profile p {
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        /* Image container */
+        .image-container {
+            margin-top: 30px;
+        }
+
+        img {
+            max-width: 100%; /* Make sure the image is responsive */
+            height: auto;
+            border-radius: 5px; /* Rounded corners on the image */
+        }
+
+        /* Fade-in animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Slide-in animation */
+        @keyframes slideIn {
+            from {
+                transform: translateY(30px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        @keyframes fadeInProfile {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Welcome!</h1>
+        <p>This is a simple page with some basic styles applied.</p>
+        <button ><a href="index2.html">Click Me!</a></button>
+        
+
+        <!-- Profile Section -->
+        <div class="profile">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRILzpTmOah0k9QhZsJYgcwJt2PyvCDmpoCw&s" alt="Profile Picture">
+            <h2>Soksaby</h2>
+            <p>Web Developer | Designer | Creator</p>
+        </div>
+    </div>
+</body>
+</html>
